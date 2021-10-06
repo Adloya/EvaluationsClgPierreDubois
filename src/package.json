@@ -1,0 +1,15 @@
+{
+  "name": "evaluations-network",
+  "version": "1.0.0",
+  "description": "Système d'informations sur les évaluations à venir au Clg Pierre Dubois",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adloya (Adrien Obreja)",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.2.0",
+    "readline-sync": "^1.4.10"
+  }
+}

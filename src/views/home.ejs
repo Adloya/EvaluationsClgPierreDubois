@@ -4,68 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible">
     <title>Ajouter une Evaluation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <style>
+        .content, .title {
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+        .title {
+            padding-top: 20px;
+        }
+        .titlebar {
+            background-color: #e0e0e0;
+            border-radius: 20px;
+        }
+        button {
+            border-radius: 10px;
+            font-size: 20px;
+        }
 
+    </style>
 </head>
 <body>
-    <h1>Ajouter une évaluation</h1>
-
-    <form action="/register", method="post">
-        <label for="who">* Votre pseudo : </label>
-        <input type="text" id="who" name="who" required>
+    <div class="titlebar">
+        <h1 class="title">Ajouter une évaluation</h1>
         <br>
-        <br>
-        <label for="evalDateI">* Date de l'évaluation : </label>
-        <input type="date" id="evalDateI" name="evalDate" required>
-        <br>
-        <br>
-        <label for="evalSubjectI">* Matière : </label>
-        <select name="evalSubject" id="evalSubjectI" required>
-            <option value="fr">Français</option>
-            <option value="eng">Anglais</option>
-            <option value="es">Espagnol</option>
-            <option value="ger">Allemand</option>
-            <option value="maths">Mathématiques</option>
-            <option value="hist">Histoire</option>
-            <option value="geo">Géographie</option>
-            <option value="emc">Education Morale et Civique</option>
-            <option value="art">Arts Plastiques</option>
-            <option value="svt">Sciences de la Vie et de la Terre</option>
-            <option value="chim">Chimie</option>
-            <option value="lce">Langues et Cultures Européennes</option>
-            <option value="music">Education Musicale</option>
-            <option value="techno">Technologie</option>
-            <option value="phy">Physique</option>
-        </select>        <br>
-        <br>
-        <label for="evalNameI">* Titre/Nom de l'évaluation : </label>
-        <input type="text" id="evalNameI" name="evalName" required>
-        <br>
-        <br>
-        <label for="evalDescI">* Description simple et courte de l'évaluation : </label>
-        <input type="text" id="evalDescI" name="evalDesc" required>
-        <br>
-        <br>
-        <label for="evalKeyPointsI">* Points clés à réviser : </label>
-        <input type="text" id="evalKeyPointsI" name="evalKeyPoints" required>
-        <br>
-        <br>
-        <label for="evalTypeI">* Type de l'évaluation : </label>
-        <select name="evalType" id="evalTypeI" required>
-            <option value="DM">DM (Devoir Maison)</option>
-            <option value="DS">DS (Devoir Surveillé)</option>
-        </select>
-        <br>
-        <br>
-        <label for="evalDocsI">Lien de docs supplémentaires (facultatif) : </label>
-        <input type="text" name="evalDocs" id="evalDocsI">
-        <br>
-        <br>
-        <button type="submit">Envoyer</button>
-        <br>
-        <p>* = Champ obligatoire</p>
-        <p>Créé par Adloya - 2021</p>
-    </form>
+    </div>
+    <br>
+    <div class="content">
+        <form action="/register" method="post" class="padding">
+            <label for="who">* Votre pseudo : </label>
+            <input type="text" id="who" name="who" required>
+            <br>
+            <br>
+            <label for="evalDateI">* Date de l'évaluation : </label>
+            <input type="date" id="evalDateI" name="evalDate" required>
+            <br>
+            <br>
+            <label for="evalSubjectI">* Matière : </label>
+            <select name="evalSubject" id="evalSubjectI" required>
+                <option value="fr">Français</option>
+                <option value="eng">Anglais</option>
+                <option value="es">Espagnol</option>
+                <option value="ger">Allemand</option>
+                <option value="maths">Mathématiques</option>
+                <option value="hist">Histoire</option>
+                <option value="geo">Géographie</option>
+                <option value="emc">Education Morale et Civique</option>
+                <option value="art">Arts Plastiques</option>
+                <option value="svt">Sciences de la Vie et de la Terre</option>
+                <option value="chim">Chimie</option>
+                <option value="lce">Langues et Cultures Européennes</option>
+                <option value="music">Education Musicale</option>
+                <option value="techno">Technologie</option>
+                <option value="phy">Physique</option>
+            </select>        <br>
+            <br>
+            <label for="evalNameI">* Titre/Nom de l'évaluation : </label>
+            <input type="text" id="evalNameI" name="evalName" required>
+            <br>
+            <br>
+            <label for="evalDescI">* Description simple et courte de l'évaluation : </label>
+            <input type="text" id="evalDescI" name="evalDesc" required>
+            <br>
+            <br>
+            <label for="evalKeyPointsI">* Points clés à réviser : </label>
+            <input type="text" id="evalKeyPointsI" name="evalKeyPoints" required>
+            <br>
+            <br>
+            <label for="evalTypeI">* Type de l'évaluation : </label>
+            <select name="evalType" id="evalTypeI" required>
+                <option value="DM">DM (Devoir Maison)</option>
+                <option value="DS">DS (Devoir Surveillé)</option>
+            </select>
+            <br>
+            <br>
+            <label for="evalDocsI">Lien de docs supplémentaires (facultatif) : </label>
+            <input type="text" name="evalDocs" id="evalDocsI">
+            <br>
+            <br>
+            <button type="submit">Envoyer</button>
+            <br>
+            <p>* = Champ obligatoire</p>
+            <p>Créé par Adloya - 2021</p>
+        </form>
+    </div>
 </body>
 </html>

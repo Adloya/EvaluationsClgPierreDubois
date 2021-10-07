@@ -140,9 +140,9 @@ webapp.post('/register', urlencodedParser, (req, res) => {
     const evalT1_embed = new Discord.MessageEmbed()
         .setTitle(`Evaluation en ${evalSubject} : ${evalName}`)
         .setDescription(`${evalDesc}`)
-        .addField("**__Date de l'évaluation : __**", evalDate)
-        .addField("**__Type d'évaluation : __**", evalType)
-        .addField("**__Points principaux à réviser : __**", evalKeyPoints)
+        .addField("**__🗓️ - Date de l'évaluation : __**", evalDate)
+        .addField("**__📜 - Type d'évaluation : __**", evalType)
+        .addField("**__✅ - Points principaux à réviser : __**", evalKeyPoints)
         .addField("**__🔗 - Liens supplémentaires : __**", `
         🌐 - [Pronote (Pierre Dubois)](https://0530015d.index-education.net/pronote/eleve.html)
     `)

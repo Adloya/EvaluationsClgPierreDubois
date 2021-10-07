@@ -32,7 +32,7 @@ let evalKeyPoints = "[Liste des points principaux à réviser]";
 let evalDate = "[Date de l'évaluation (JJ/MM/AAAA)"
 let evalType = "[Type d'évaluation (DM /DS)]"
 let evalDocs = "https://www.example.com/"
-let evalImg = "https://tabagisme.unisante.ch/wp-content/uploads/2019/09/test.jpg"
+let evalImg = "[img]"
 
 // Configuration EJS
 webapp.set('views', './views')

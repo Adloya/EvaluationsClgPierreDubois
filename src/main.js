@@ -6,8 +6,8 @@ const bodyParser = require("body-parser")
 const { check, validationResult } = require("express-validator")
 
 // Variables systèmes
-const webhook = new Discord.WebhookClient({id: 'WEBHOOKID', token: 'WEBHOOKTOKEN'});
-const debugWebhook = new Discord.WebhookClient({id: 'WEBHOOKTESTID', token: 'WEBHOOKTESTTOKEN'});
+const webhook = new Discord.WebhookClient({id: '895337798134009957', token: '4XOx7bRRenoqpGQRn4I1X-TghmATO-n8Ce_s3-NvQAk2QUsd0Gb_Kt16mRAKPorAWuoV'});
+const debugWebhook = new Discord.WebhookClient({id: '895344885941559326', token: 'YdE20V--nXMS0jRSOfhtSW-aVJBgZnD3OPVFTjUvPOjeUr2rCCIeDV1wfs-7dOf2z6sC'});
 const evaluations = require("./json/evaluations.json")
 const configuration = require("./json/config.json")
 const webapp = express()
@@ -59,63 +59,63 @@ webapp.post('/register', urlencodedParser, (req, res) => {
 
     // Détermine quelle matière est concernée
     if(req.body.evalSubject === "fr"){
-        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/blob/main/src/img/icons8-france-64.png"
+        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/main/src/img/icons8-france-64.png"
         evalSubject = "Français"
     }
     else if(req.body.evalSubject === "art"){
-        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/blob/main/src/img/icons8-art-64.png"
+        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/main/src/img/icons8-art-64.png"
         evalSubject = "Arts Plastiques"
     }
     else if(req.body.evalSubject === "svt"){
-        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/blob/main/src/img/icons8-biology-64.png"
+        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/main/src/img/icons8-biology-64.png"
         evalSubject = "Sciences de la Vie et de la Terre"
     }
     else if(req.body.evalSubject === "chim"){
-        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/blob/main/src/img/icons8-chemistry-47.png"
+        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/main/src/img/icons8-chemistry-47.png"
         evalSubject = "Chimie"
     }
     else if(req.body.evalSubject === "lce"){
-        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/blob/main/src/img/icons8-drapeau-de-l'europe-48.png"
+        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/main/src/img/icons8-drapeau-de-l'europe-48.png"
         evalSubject = "Langues et Cultures Européennes"
     }
     else if(req.body.evalSubject === "geo"){
-        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/blob/main/src/img/icons8-geography-64.png"
+        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/main/src/img/icons8-geography-64.png"
         evalSubject = "Géographie"
     }
     else if(req.body.evalSubject === "ger"){
-        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/blob/main/src/img/icons8-germany-64.png"
+        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/main/src/img/icons8-germany-64.png"
         evalSubject = "Allemand"
     }
     else if(req.body.evalSubject === "hist"){
-        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/blob/main/src/img/icons8-history-64.png"
+        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/main/src/img/icons8-history-64.png"
         evalSubject = "Histoire"
     }
     else if(req.body.evalSubject === "maths"){
-        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/blob/main/src/img/icons8-maths-64.png"
+        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/main/src/img/icons8-maths-64.png"
         evalSubject = "Mathématiques"
     }
     else if(req.body.evalSubject === "music"){
-        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/blob/main/src/img/icons8-music-64.png"
+        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/main/src/img/icons8-music-64.png"
         evalSubject = "Education Musicale"
     }
     else if(req.body.evalSubject === "techno"){
-        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/blob/main/src/img/icons8-ordinateur-48.png"
+        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/main/src/img/icons8-ordinateur-48.png"
         evalSubject = "Technologie"
     }
     else if(req.body.evalSubject === "phy"){
-        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/blob/main/src/img/icons8-physique-48.png"
+        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/main/src/img/icons8-physique-48.png"
         evalSubject = "Physique"
     }
     else if(req.body.evalSubject === "es"){
-        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/blob/main/src/img/icons8-spain-64.png"
+        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/main/src/img/icons8-spain-64.png"
         evalSubject = "Espagnol"
     }
     else if(req.body.evalSubject === "eng"){
-        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/blob/main/src/img/icons8-uk-flag-64.png"
+        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/main/src/img/icons8-uk-flag-64.png"
         evalSubject = "Anglais"
     }
     else if(req.body.evalSubject === "emc"){
-        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/blob/main/src/img/icons8-morale-48.png"
+        evalImg = "https://raw.githubusercontent.com/Adloya/EvaluationsClgPierreDubois/main/src/img/icons8-morale-48.png"
         evalSubject = "Education Morale et Civique"
     }
 
@@ -151,8 +151,8 @@ webapp.post('/register', urlencodedParser, (req, res) => {
         .setAuthor("Evaluations Collège Pierre Dubois", "https://cdn.discordapp.com/attachments/870383856195371008/895353675139137556/unknown.png")
         .setThumbnail(evalImg)
 
-    if(!evalDocs === "https://www.example.com/") debugWebhook.send({embeds: [evalT1_Files_embed]});
-    else if(evalDocs === "https://www.example.com/") debugWebhook.send({embeds: [evalT1_embed]});
+    if(!evalDocs === "https://www.example.com/") webhook.send({embeds: [evalT1_Files_embed]});
+    else if(evalDocs === "https://www.example.com/") webhook.send({embeds: [evalT1_embed]});
 })
 
 

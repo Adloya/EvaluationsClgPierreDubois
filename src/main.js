@@ -6,8 +6,8 @@ const bodyParser = require("body-parser")
 const { check, validationResult } = require("express-validator")
 
 // Variables systèmes
-const webhook = new Discord.WebhookClient({id: '895337798134009957', token: '4XOx7bRRenoqpGQRn4I1X-TghmATO-n8Ce_s3-NvQAk2QUsd0Gb_Kt16mRAKPorAWuoV'});
-const debugWebhook = new Discord.WebhookClient({id: '895344885941559326', token: 'YdE20V--nXMS0jRSOfhtSW-aVJBgZnD3OPVFTjUvPOjeUr2rCCIeDV1wfs-7dOf2z6sC'});
+const webhook = new Discord.WebhookClient({id: 'WEBHOOKID', token: 'WEBHOOKTOKEN'});
+const debugWebhook = new Discord.WebhookClient({id: 'WEBHOOKTESTID', token: 'WEBHOOKTESTTOKEN'});
 const evaluations = require("./json/evaluations.json")
 const configuration = require("./json/config.json")
 const webapp = express()

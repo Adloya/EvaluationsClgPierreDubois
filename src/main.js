@@ -13,63 +13,63 @@ const webapp = express()
 const evaluationSubjects = {
     fr: {
         name = 'Français',
-        img = imgHost('france', '64')
+        img = imgHost('france', 64)
     },
     art: {
         name = 'Arts Plastiques',
-        img = imgHost('art', '64')
+        img = imgHost('art', 64)
     },
     svt: {
         name = 'Sciences de la Vie et de la Terre',
-        img = imgHost('biology', '64')
+        img = imgHost('biology', 64)
     },
     chim: {
         name = 'Chimie',
-        img = imgHost('chemistry', '47')
+        img = imgHost('chemistry', 47)
     },
     lce: {
         name = 'Langues et Cultures Européennes',
-        img = imgHost("drapeau-de-l'europe", '48')
+        img = imgHost("drapeau-de-l'europe", 48)
     },
     geo: {
         name = 'Géographie',
-        img = imgHost('geography', '64')
+        img = imgHost('geography', 64)
     },
     ger: {
         name = 'Allemand',
-        img = imgHost('germany', '64')
+        img = imgHost('germany', 64)
     },
     hist: {
         name = 'Histoire',
-        img = imgHost('history', '64')
+        img = imgHost('history', 64)
     },
     maths: {
         name = 'Mathématiques',
-        img = imgHost('maths', '64')
+        img = imgHost('maths', 64)
     },
     music: {
         name = 'Education Musicale',
-        img = imgHost('music', '64')
+        img = imgHost('music', 64)
     },
     techno: {
         name = 'Technologie',
-        img = imgHost('ordinateur', '48')
+        img = imgHost('ordinateur', 48)
     },
     phy: {
         name = 'Physique',
-        img = imgHost('physique', '48')
+        img = imgHost('physique', 48)
     },
     es: {
         name = 'Espagnol',
-        img = imgHost('spain')
+        img = imgHost('spain', 64)
     },
     eng: {
         name = 'Anglais',
-        img = imgHost('uk-flag')
+        img = imgHost('uk-flag', 64)
     },
     emc: {
         name = 'Education Morale et Civique',
-        img = imgHost('morale', '48')
+        img = imgHost('morale', 48)
     },
 }
 
